@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenhouse Gas Emission Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Greenhouse Gas Emission Survey</h1>
+    </header>
+
+    <form>
+        <label for="age">1. What is your age?</label>
+        <input type="text" id="age" name="age" required>
+
+        <label>2. What is your gender?</label>
+        <label for="male">
+            <input type="radio" id="male" name="gender" value="male"> Male
+        </label>
+        <label for="female">
+            <input type="radio" id="female" name="gender" value="female"> Female
+        </label>
+        <label for="other">
+            <input type="radio" id="other" name="gender" value="other"> Other
+        </label>
+
+        <label>3. Which of the following activities do you engage in to reduce your carbon footprint? (Select all that apply)</label>
+        <label for="renewableEnergy">
+            <input type="checkbox" id="renewableEnergy" name="activities" value="renewableEnergy"> Use renewable energy sources
+        </label>
+        <label for="reduceWaste">
+            <input type="checkbox" id="reduceWaste" name="activities" value="reduceWaste"> Reduce waste and recycle
+        </label>
+        <label for="publicTransportation">
+            <input type="checkbox" id="publicTransportation" name="activities" value="publicTransportation"> Use public transportation
+        </label>
+
+        <label for="comments">4. Any additional comments or suggestions:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
